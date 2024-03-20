@@ -1,12 +1,12 @@
 # WinRM Monitoring Script
 
-This Python script monitors the status of the Windows Remote Management (WinRM) service and automatically disables it if it is found to be running. Additionally, it sends an email notification when the WinRM service is disabled.
+This Python script monitors the status of the Windows Remote Management (WinRM) service and automatically disables it if it is found to be running. Additionally, it sends an email notification when the WinRM service is detected as enabled.
 
 ## Features
 
 - Continuously checks the status of the WinRM service at regular intervals (default: 30 seconds).
 - Disables the WinRM service if it is found to be running.
-- Sends an email notification using the Mailgun API when the WinRM service is disabled.
+- Sends an email notification using the Mailgun API when the WinRM service is detected as enabled.
 - Handles keyboard interrupts (Ctrl+C) gracefully and displays a message when monitoring is stopped by the user.
 
 ## Prerequisites
